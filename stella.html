@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="js/jQuery.js"></script>
+
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/stella.css">
+
+</head>
+<body>
+
+<div id="ageValContainer" class="vanishAgeVal">
+  <div class="centerAlign">
+
+    <div class="ageValDiv">
+
+      <img src="http://placehold.it/300x60" alt="">
+      <h2>Para disfrutar de esta experiencia<br>debés ser mayor de edad.</h2>
+      <h5 id="ageValAlert">Fecha de nacimiento</h5>
+
+      <form autocomplete="off" id="age-form" method="get">
+        <input class="ageInput" type="text" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
+        <input class="ageInput" type="text" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
+        <input class="ageInput" type="text" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
+        <input class="ageSubmit" type="submit" value="Ingresar">
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="stellaBody">
+  <div class="stellaHeader">
+    <img src="http://placehold.it/300x60" alt="">
+    <p class="termsNconditions">Términos y condiciones</p>
+  </div>
+
+  <div class="fullPageVideo container-fluid">
+    <img style="width:100%" src="img/video.png" alt="">
+  </div>
+
+  <div class="textSection container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+
+
+</div>
+
+
+<!-- AGE VALIDATION SCRIPT -->
+<script type="text/javascript">
+$("#age-form").submit(function(){
+  var day = $("#day").val();
+  var month = $("#month").val();
+  var year = $("#year").val();
+  var age = 18;
+  var mydate = new Date();
+  mydate.setFullYear(year, month-1, day);
+
+  var currdate = new Date();
+  currdate.setFullYear(currdate.getFullYear() - age);
+  if ((currdate - mydate) < 0){
+    alert('Lo sentimos, para ingresar al sitio debés ser +18')
+  }
+
+  if ((currdate - mydate) > 0){
+    $('#ageValContainer').toggleClass("vanishAgeVal")
+  }
+});
+</script>
+
+</body>
+</html>
