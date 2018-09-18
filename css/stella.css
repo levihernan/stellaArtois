@@ -1,31 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Poppins:400,400i,700,700i');
 /* Stella body */
 body{
   margin: 0;
+  font-family: Gentium Book Basic, serif;
 }
+.sBody{
+  position: relative;
+}
+
+/* misc */
+.flexCenterContainer{
+  display: flex;
+  align-items: center;
+}
+.flexCenterItem{
+  align-self: center;
+}
+
+/* sections */
+.section{
+  padding: 100px 0;
+}
+.textSection{
+  padding: 50px 0;
+  max-width: 1024px;
+  margin: auto;
+  font-size: 24px;
+  text-align: center;
+  font-family: Gentium Book Basic, serif;
+  font-size: 24px;
+  line-height: 42px;
+}
+.eventSection{
+  background: rgba(120, 120, 120, 0.1);
+  position: relative;
+}
+.shareSection{
+}
+.photoSection{
+  background: #000;
+}
+
+
 /* header */
-.stellaHeader{
+.sHeader{
   position: relative;
   width: 100%;
   margin: 0;
-  background: #eee;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
+  background: url('../img/headerMarmol.svg');
+  background-size: cover;
+  background-position: center;
+}
+.logoMesa{
+  max-width: 200px;
 }
 .termsNconditions{
   position: absolute;
   top: 10px;
   right: 20px;
   margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
 }
 
-/* body */
-.textSection{
-  padding: 50px 0;
-  max-width: 1024px;
-  margin: auto;
+
+/* event */
+.sectionTitle{
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: 10px 50px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 10px 10px -10px #000;
+}
+.cheffTile{
+}
+.cheffText{
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: justify;
+}
+.dateTile{
+  border-bottom: solid 2px #BC1421;
+  font-family: Gentium Book Basic, serif;
+  line-height: 20px
+}
+.dateTile h3{
+  /* fecha */
+  font-style: italic;
+  color: #BC1421;
+  font-size: 20px;
+}
+.dateTile h1{
+  /* chef */
+  font-size: 30px;
+}
+.dateTile h2{
+  /* lugar */
+  font-size: 25px;
+}
+
+
+
+.placeTile{
+  background: #fff;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+.placeTile img{
+  width: 100%;
+}
+.placeText{
+  padding: 20px;
+  font-style: italic;
+}
+.menuContainer{
+  text-align: center;
+}
+.menuLink{
+  color: #BC1421;
+  font-family: Poppins, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.buyButtonContainer{
+  width: 100%;
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  text-align: center;
+  font-family: Gentium Book Basic, serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 42px;
   font-size: 24px;
+  text-align: center;
+}
+.buyButton{
+  width: 250px;
+  padding: 6px 0;
+  background: #BC1421;
+  color: #fff;
+  display: inline-block;
+}
+.buyButton p{
+  margin: 0;
+}
+
+/* share */
+.shareSection img{
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.shareSection p{
+  color: #BC1421;
+  font-family: Poppins, sans-serif;
+}
+
+/* photos */
+.photo{
+  width: 100%;
+}
+
+
+.beberConModeracion{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 110;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 -10px 20px -12px #000;
+}
+.beberConModeracion h5{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -41,14 +210,23 @@ body{
   top: 0;
   left: 0;
   z-index: 100;
+  background-image: url('../img/ageValBack.svg');
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
 }
 
 .ageValDiv{
   text-align: center;
 }
 
+#ageValContainer{
+  opacity: 1;
+  transition: all ease 0.5s;
+}
 .vanishAgeVal{
-  display: none;
+  opacity: 0 !important;
+  pointer-events: none;
 }
 
 .ageInput{
@@ -56,38 +234,36 @@ body{
   padding: 10px;
   margin: 10px;
   text-align: center;
-  border: solid 2px #f00;
+  border: solid 2px #BC1421;
 }
 
 .ageSubmit{
   display: block;
   margin: auto;
   padding: 10px;
-  background: #f00;
+  background: #BC1421;
   color: #fff;
-  border-bottom: solid 2px #c00;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  box-shadow: 0 10px 10px -7px #BC1421;
+  border:0;
   width: 100px;
 }
 
 
 @media only screen
-  and (max-device-width: 768px) {
-/* PHONES */
+and (max-device-width: 768px) {
+  /* PHONES */
 
 }
 
 @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px) {
-/* TABLET */
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  /* TABLET */
 
 }
 
 @media screen
-  and (min-device-width: 1024px) {
-/* DESKTOP */
+and (min-device-width: 1024px) {
+  /* DESKTOP */
 
 }

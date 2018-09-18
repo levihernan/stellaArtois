@@ -5,72 +5,173 @@
   <title></title>
   <script type="text/javascript" src="js/jQuery.js"></script>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/stella.css">
 
 </head>
 <body>
 
-<div id="ageValContainer" class="vanishAgeVal">
-  <div class="centerAlign">
 
-    <div class="ageValDiv">
 
-      <img src="http://placehold.it/300x60" alt="">
-      <h2>Para disfrutar de esta experiencia<br>debés ser mayor de edad.</h2>
-      <h5 id="ageValAlert">Fecha de nacimiento</h5>
-
-      <form autocomplete="off" id="age-form" method="get">
-        <input class="ageInput" type="text" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
-        <input class="ageInput" type="text" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
-        <input class="ageInput" type="text" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
-        <input class="ageSubmit" type="submit" value="Ingresar">
-      </form>
-
+  <div class="sBody">
+    <div class="sHeader">
+      <img class="logoMesa" src="img/mesaLogo.svg" alt="">
+      <p class="termsNconditions">Términos y condiciones</p>
     </div>
-  </div>
-</div>
 
-<div class="stellaBody">
-  <div class="stellaHeader">
-    <img src="http://placehold.it/300x60" alt="">
-    <p class="termsNconditions">Términos y condiciones</p>
-  </div>
+    <div class="fullPageVideo container-fluid">
+      <div class="row">
+        <img style="width:100%; height:100%;" src="img/video.png" alt="">
+      </div>
+    </div>
+    <div class="textSection section">
+      <div class="container">
+        <div class="row">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="eventSection section">
 
-  <div class="fullPageVideo container-fluid">
-    <img style="width:100%" src="img/video.png" alt="">
-  </div>
+      <div class="container">
+        <div class="row">
 
-  <div class="textSection container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
+          <div class="sectionTitle">
+            <h1>Próxima Mesa</h1>
+          </div>
+
+          <div class="col-md-6 cheffTile">
+            <div class="row">
+              <div class="col-md-4 flexCenterContainer">
+                <img src="img/kalika.jpg" class="flexCenterItem" style="border-radius:50%; max-width:100%" alt="">
+              </div>
+              <div class="dateTile col-md-6">
+                <h3>3 de Octubre</h3>
+                <h1>FT. Tomás Kalika</h1>
+                <h2>+MALBA</h2>
+
+              </div>
+            </div>
+            <div class="cheffText">
+
+            <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-10 offset-md-1 placeTile">
+
+                <img src="img/malba.png" alt="">
+                <div class="placeText">
+                  <div class="menuContainer">
+                  <a href="#" class="menuLink">Ver menú</a>
+
+                </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="buyButtonContainer">
+                    <div class="buyButton">
+                      <p>Comprar Entrada</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shareSection">
+      <div class="container">
+        <div class="row">
+          <p>Compartir
+            <img src="img/shareButton.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="photoSection section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+              <img class="photo" src="img/photo1.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="photo" src="img/photo2.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="photo" src="img/photo3.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="photo" src="img/photo4.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="photo" src="img/photo5.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="photo" src="img/photo6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
-</div>
+      <div class="beberConModeracion">
+        <h5>Beber con moderación, prohibida su venta a menores de 18 años</h5>
+      </div>
+    </div>
+
+    <div id="ageValContainer" class="vanishAgeVal">
+      <div class="centerAlign">
+
+        <div class="ageValDiv">
+
+          <img src="img/stellaLogo.svg" alt="">
+          <h2>Para disfrutar de esta experiencia<br>debés ser mayor de edad.</h2>
+          <h5 id="ageValAlert">Fecha de nacimiento</h5>
+
+          <form autocomplete="off" id="age-form">
+            <input class="ageInput" type="text" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
+            <input class="ageInput" type="text" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
+            <input class="ageInput" type="text" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
+            <input class="ageSubmit" type="button" onclick="vanishAgeVal()" value="Ingresar">
+          </form>
+
+        </div>
+      </div>
+      <div class="beberConModeracion">
+        <h5>Beber con moderación, prohibida su venta a menores de 18 años</h5>
+      </div>
+    </div>
 
 
-<!-- AGE VALIDATION SCRIPT -->
-<script type="text/javascript">
-$("#age-form").submit(function(){
-  var day = $("#day").val();
-  var month = $("#month").val();
-  var year = $("#year").val();
-  var age = 18;
-  var mydate = new Date();
-  mydate.setFullYear(year, month-1, day);
+    <!-- AGE VALIDATION SCRIPT -->
+    <script type="text/javascript">
+      function vanishAgeVal(){
+        var day = $("#day").val();
+        var month = $("#month").val();
+        var year = $("#year").val();
+        var age = 18;
+        var mydate = new Date();
+        mydate.setFullYear(year, month-1, day);
 
-  var currdate = new Date();
-  currdate.setFullYear(currdate.getFullYear() - age);
-  if ((currdate - mydate) < 0){
-    alert('Lo sentimos, para ingresar al sitio debés ser +18')
-  }
+        var currdate = new Date();
+        currdate.setFullYear(currdate.getFullYear() - age);
+        if ((currdate - mydate) < 0){
+          alert('Lo sentimos, para ingresar al sitio debés ser +18')
+        }
+        else if ((currdate - mydate) > 0){
+          $('#ageValContainer').toggleClass("vanishAgeVal")
+        }
+      };
+    </script>
 
-  if ((currdate - mydate) > 0){
-    $('#ageValContainer').toggleClass("vanishAgeVal")
-  }
-});
-</script>
-
-</body>
-</html>
+  </body>
+  </html>
