@@ -3,16 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <script type="text/javascript" src="js/jQuery.js"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/stella.css">
 
 </head>
-<body>
+<body class="lockScroll">
 
 
 
@@ -23,6 +27,11 @@
     </div>
 
     <div class="fullPageVideo container-fluid">
+      <div class="row">
+        <img style="width:100%; height:100%;" src="img/video.png" alt="">
+      </div>
+    </div>
+    <div class="fullPageGif container-fluid">
       <div class="row">
         <img style="width:100%; height:100%;" src="img/video.png" alt="">
       </div>
@@ -43,36 +52,39 @@
             <h1>Próxima Mesa</h1>
           </div>
 
-          <div class="col-md-6 cheffTile">
+          <div class="col-md-6 col-12 cheffTile">
             <div class="row">
-              <div class="col-md-4 flexCenterContainer">
-                <img src="img/kalika.jpg" class="flexCenterItem" style="border-radius:50%; max-width:100%" alt="">
+              <div class="col-md-4 col-5 flexCenterContainer">
+                <img src="img/kalika.jpg" class="flexCenterItem cheffPhoto" alt="">
               </div>
-              <div class="dateTile col-md-6">
+              <div class="dateTile col-md-6 col-7 flexCenterContainer">
+                <div class="flexCenterItem">
                 <h3>3 de Octubre</h3>
                 <h1>FT. Tomás Kalika</h1>
                 <h2>+MALBA</h2>
+              </div>
 
               </div>
             </div>
             <div class="cheffText">
 
-            <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+              <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+            </div>
           </div>
 
 
-          <div class="col-md-6">
-            <div class="row">
+          <div class="col-md-6 flexCenterContainer">
+            <div class="row flexCenterItem">
               <div class="col-md-10 offset-md-1 placeTile">
 
                 <img src="img/malba.png" alt="">
                 <div class="placeText">
                   <div class="menuContainer">
-                  <a href="#" class="menuLink">Ver menú</a>
+                    <a href="#" class="menuLink">Ver menú</a>
 
-                </div>
+                  </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <div class="buyButtonContainer">
                     <div class="buyButton">
@@ -89,32 +101,31 @@
 
     <div class="shareSection">
       <div class="container">
-        <div class="row">
           <p>Compartir
             <img src="img/shareButton.svg" alt="">
-          </div>
         </div>
       </div>
 
       <div class="photoSection section">
-        <div class="container-fluid">
+        <div class="container">
+
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-4 photoContainer">
               <img class="photo" src="img/photo1.png" alt="">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-4 photoContainer">
               <img class="photo" src="img/photo2.png" alt="">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-4 photoContainer">
               <img class="photo" src="img/photo3.png" alt="">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-4 photoContainer">
               <img class="photo" src="img/photo4.png" alt="">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-4 photoContainer">
               <img class="photo" src="img/photo5.png" alt="">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-4 photoContainer">
               <img class="photo" src="img/photo6.png" alt="">
             </div>
           </div>
@@ -128,7 +139,7 @@
       </div>
     </div>
 
-    <div id="ageValContainer" class="vanishAgeVal">
+    <div id="ageValContainer" class="">
       <div class="centerAlign">
 
         <div class="ageValDiv">
@@ -138,10 +149,11 @@
           <h5 id="ageValAlert">Fecha de nacimiento</h5>
 
           <form autocomplete="off" id="age-form">
-            <input class="ageInput" type="text" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
-            <input class="ageInput" type="text" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
-            <input class="ageInput" type="text" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
-            <input class="ageSubmit" type="button" onclick="vanishAgeVal()" value="Ingresar">
+            <input required class="ageInput" type="text" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
+            <input required class="ageInput" type="text" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
+            <input required class="ageInput" type="text" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
+            <input class="ageSubmit" type="submit" value="Ingresar">
+            <!-- <input type="date" name="" value=""> -->
           </form>
 
         </div>
@@ -153,8 +165,14 @@
 
 
     <!-- AGE VALIDATION SCRIPT -->
-    <script type="text/javascript">
-      function vanishAgeVal(){
+    <script>
+    $(document).ready(function(){
+
+      var form = $('#age-form');
+      form.submit(function(e) {
+        // prevent form submission
+        e.preventDefault();
+
         var day = $("#day").val();
         var month = $("#month").val();
         var year = $("#year").val();
@@ -165,12 +183,20 @@
         var currdate = new Date();
         currdate.setFullYear(currdate.getFullYear() - age);
         if ((currdate - mydate) < 0){
-          alert('Lo sentimos, para ingresar al sitio debés ser +18')
+          alert('Lo sentimos, para ingresar al sitio debés ser +18');
+          return false;
         }
         else if ((currdate - mydate) > 0){
-          $('#ageValContainer').toggleClass("vanishAgeVal")
+          $('#ageValContainer').toggleClass("vanishAgeVal");
+          $('body').toggleClass("lockScroll");
+          return false;
         }
-      };
+      })
+
+      $('#ageValContainer').toggleClass("vanishAgeVal");
+      $('body').toggleClass("lockScroll");
+    });
+
     </script>
 
   </body>

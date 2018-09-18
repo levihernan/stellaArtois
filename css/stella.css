@@ -4,6 +4,9 @@ body{
   margin: 0;
   font-family: Gentium Book Basic, serif;
 }
+.lockScroll{
+  overflow: hidden;
+}
 .sBody{
   position: relative;
 }
@@ -12,6 +15,7 @@ body{
 .flexCenterContainer{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .flexCenterItem{
   align-self: center;
@@ -36,6 +40,10 @@ body{
   position: relative;
 }
 .shareSection{
+  background: url('../img/headerMarmol.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 25px 0;
 }
 .photoSection{
   background: #000;
@@ -61,8 +69,8 @@ body{
 }
 .termsNconditions{
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   margin: 0;
   font-family: Poppins, sans-serif;
   font-size: 12px;
@@ -74,17 +82,29 @@ body{
 /* event */
 .sectionTitle{
   position: absolute;
-  top: -50px;
+  top: -26px;
   left: 0;
-  padding: 10px 50px;
   text-align: center;
   background: #000;
   color: #fff;
   box-shadow: 0 10px 10px -10px #000;
+  width: 425px;
+}
+.sectionTitle h1{
+  font-weight: 100;
+  margin: 0;
+  font-size: 30px;
+  line-height: 52px;
 }
 .cheffTile{
 }
+.cheffPhoto{
+  border-radius: 50%;
+  width: 100%;
+  box-shadow: 0 0 10px -5px #000;
+}
 .cheffText{
+  padding-top: 20px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -95,7 +115,8 @@ body{
 .dateTile{
   border-bottom: solid 2px #BC1421;
   font-family: Gentium Book Basic, serif;
-  line-height: 20px
+  line-height: 20px;
+  box-sizing: border-box;
 }
 .dateTile h3{
   /* fecha */
@@ -117,7 +138,9 @@ body{
 .placeTile{
   background: #fff;
   padding: 0;
+  padding-bottom: 27px;
   font-family: Poppins, sans-serif;
+  box-shadow: 0 0 10px -7px #000;
 }
 .placeTile img{
   width: 100%;
@@ -125,6 +148,7 @@ body{
 .placeText{
   padding: 20px;
   font-style: italic;
+  text-align: center;
 }
 .menuContainer{
   text-align: center;
@@ -157,6 +181,7 @@ body{
   background: #BC1421;
   color: #fff;
   display: inline-block;
+  box-shadow: 0 10px 10px -10px #000;
 }
 .buyButton p{
   margin: 0;
@@ -204,7 +229,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -247,23 +272,138 @@ body{
   border:0;
   width: 100px;
 }
+.fullPageGif{
+  display: none;
+}
 
 
-@media only screen
-and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* PHONES */
+  /* head */
+  .logoMesa{
+    width: 40%;
+  }
+  .termsNconditions{
+    top: 10px;
+    right: 10px;
+  }
+  /* cover */
+  .fullPageGif{
+    display: block;
+  }
+  .fullPageVideo{
+    display: none;
+  }
+  /* text */
+  .textSection{
+    padding: 30px;
+  }
+  .textSection p{
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+  }
+  /* date */
+  .eventSection{
+    padding: 50px 20px;
+  }
+  .sectionTitle{
+    width: 200px;
+    top:-17px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sectionTitle h1{
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .dateTile{
+    line-height: 12px;
+    border-bottom: 0;
+    width: 100%;
+  }
+  .dateTile h3{
+    font-size: 14px;
+  }
+  .dateTile h1{
+    font-size: 18px;
+  }
+  .dateTile h2{
+    font-size: 16px;
+  }
+  .dateTile .flexCenterItem{
+    border-bottom: solid 2px #BC1421;
+    width: 100%;
+  }
+  .cheffTile{
+    padding: 20px 0;
+  }
+  .cheffText{
+    line-height: 22px;
+    font-size: 12px;
+  }
+  .placeTile{
+    line-height: 25px;
+    font-size: 14px;
+  }
+  .buyButton{
+    line-height: 35px;
+    font-size: 20px;
+    width: 200px;
+  }
 
-}
+  /* share */
+  .shareSection{
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    padding: 20px;
+  }
+  .shareSection img{
+    width: 18px;
+    height: 18px;
+  }
 
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-  /* TABLET */
+  /* phtos */
+  .photoSection{
+    padding: 8px 4px;
+  }
+  .photoContainer{
+    padding: 4px 8px;
+  }
+  .photo{
+    width: 100%;
+  }
 
-}
+  /* ageval */
+  .centerAlign{
+    background-image: url('../img/mobileAgeValBack.svg');
+  }
+  .ageValDiv{
+    padding: 20px;
+  }
+  .ageValDiv img{
+    width: 100%;
+  }
+  .ageInput{
+    width: 20%;
+  }
+  .ageSubmit{
+    width: 190px;
+    margin-top: 20px;
+  }
 
-@media screen
-and (min-device-width: 1024px) {
-  /* DESKTOP */
-
+  /* +18 */
+  .sBody{
+    padding-bottom: 54px;
+  }
+  .beberConModeracion{
+    padding: 18px;
+  }
+  .beberConModeracion h5{
+    line-height: 18px;
+    font-size: 8px;
+    margin: 0;
+  }
 }
