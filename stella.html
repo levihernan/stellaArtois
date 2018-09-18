@@ -7,7 +7,7 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -149,18 +149,18 @@
           <h5 id="ageValAlert">Fecha de nacimiento</h5>
 
           <form autocomplete="off" id="age-form">
-            <input required class="ageInput" type="text" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
-            <input required class="ageInput" type="text" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
-            <input required class="ageInput" type="text" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
+            <input required maxlength="2" class="ageInput" type="number" min="0" max="31" id="day" pattern="([1-9]|0[1-9]|[12][0-9]|3[01])" placeholder="Día" >
+            <input required maxlength="2" class="ageInput" type="number" min="0" max="12" id="month" pattern="[1-9]|0[1-9]|1[012]" name="" placeholder="Mes">
+            <input required maxlength="4" class="ageInput" type="number" min="1918" max="2018" id="year" pattern="(19|20)\d\d" name="" placeholder="Año">
             <input class="ageSubmit" type="submit" value="Ingresar">
             <!-- <input type="date" name="" value=""> -->
           </form>
 
         </div>
-      </div>
       <div class="beberConModeracion">
         <h5>Beber con moderación, prohibida su venta a menores de 18 años</h5>
       </div>
+    </div>
     </div>
 
 
@@ -193,8 +193,9 @@
         }
       })
 
-      $('#ageValContainer').toggleClass("vanishAgeVal");
-      $('body').toggleClass("lockScroll");
+      // // sacar el ageval
+      // $('#ageValContainer').toggleClass("vanishAgeVal");
+      // $('body').toggleClass("lockScroll");
     });
 
     </script>
